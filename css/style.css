@@ -116,4 +116,8 @@ body {
     line-height: 1.6;
     text-align: unset;
   }
+  .about_us_title {
+  font-size: 20px;
+      
+  }
 }
