@@ -7,6 +7,9 @@
 :root {
   --main-color: #ea6336;
 }
+body{
+    background-color: #F4F5DB;
+}
 /************ the header section **************/
 .header {
   padding: 5px;
