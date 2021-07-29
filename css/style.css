@@ -53,28 +53,32 @@ body {
   border-bottom: gold 2px solid;
 }
 /* **********About us Section **************** */
-.about_us {
-  /* border: #f4f5db 60px solid; */
-  border-left: none;
+.about_us,
+.our-service {
   background-size: 55%;
+  margin-top: 50px;
 }
 
-.about_us_content {
+.about_us_content,
+.our_service_content {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10px;
 }
-.about_us_content figcaption {
+.about_us_content figcaption,
+.our_service_content figcaption {
   width: 45%;
   height: auto;
   margin-left: 3%;
 }
-.about_us_content figcaption img {
+.about_us_content figcaption img,
+.our_service_content figcaption img {
   width: 100%;
 }
-.about_us_title {
+.about_us_title,
+.our_service_title {
   padding: 5px;
   width: 120px;
   margin: auto;
@@ -84,7 +88,8 @@ body {
   font-weight: bold;
 }
 
-.about_us p {
+.about_us p,
+.our-service p {
   font-size: 18px;
   line-height: 30px;
   text-align: justify;
@@ -92,6 +97,19 @@ body {
   padding: 25px;
   margin-right: 30px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+}
+/*  OUr service  */
+.our_service_title {
+  width: 170px;
+}
+.our_service_content figcaption{
+    margin-right: 25px;
+}
+ .our_service_content figcaption img {
+  max-height: 400px;
+}
+.our-service p{
+    margin-left: 25px;
 }
 /* **************Media query*********** */
 @media (max-width: 768px) {
@@ -104,20 +122,25 @@ body {
   .header_nav_list a {
     font-size: 14px;
   }
-  .about_us_content figcaption {
+  .about_us_content figcaption,
+  .our_service_content figcaption {
     display: none;
     visibility: hidden;
   }
 
-  .about_us p {
+  .about_us p,
+  .our_service_content p {
     width: 100%;
     margin-left: 20px;
     font-size: 14px;
     line-height: 1.6;
     text-align: unset;
   }
-  .about_us_title {
-  font-size: 20px;
-      
+  .about_us_title,
+  .our_service_title {
+    font-size: 20px;
+  }
+  .our_service_title {
+    width: 120px;
   }
 }
