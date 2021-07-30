@@ -80,7 +80,7 @@ body {
 .about_us_title,
 .our_service_title {
   padding: 5px;
-  width: 120px;
+  width: 150px;
   margin: auto;
   font-size: 27px;
   color: var(--main-color);
@@ -100,7 +100,7 @@ body {
 }
 /*  OUr service  */
 .our_service_title {
-  width: 170px;
+  width: 180px;
 }
 .our_service_content figcaption{
     margin-right: 25px;
@@ -120,7 +120,7 @@ body {
     width: 100%;
   }
   .header_nav_list a {
-    font-size: 14px;
+    font-size: 13px;
   }
   .about_us_content figcaption,
   .our_service_content figcaption {
@@ -138,9 +138,8 @@ body {
   }
   .about_us_title,
   .our_service_title {
-    font-size: 20px;
+    font-size: 14px;
+    width:100px;
   }
-  .our_service_title {
-    width: 120px;
-  }
+
 }
