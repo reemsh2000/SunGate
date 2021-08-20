@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/81c816aea5.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/slider.css" rel="stylesheet" />
     <title>SunGate</title>
@@ -19,14 +23,30 @@
         <nav class="header_nav">
           <ul class="header_nav_list">
             <li class="list_item_active"><a href="./index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#contact">contact Us</a></li>
+            <li><a href="#our_services">Our Services</a></li>
+            <li><a href="#contact" onclick="showContactUs">contact Us</a></li>
           </ul>
+          <div class="icons">
+            <button class="switch"><i class="fas fa-toggle-on"></i></button>
+            <i class="fas fa-search"></i>
+          </div>
         </nav>
       </div>
     </header>
 
+    <!-- Contact Us -->
+    <section class="contact_us">
+      <h2 class="title">Send Us a Message</h2>
+      <div class="form_content">
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="E-mail" />
+        <input type="text" placeholder="Phone" />
+        <textarea placeholder="Your message"></textarea>
+        <button class="send">Send</button>
+      </div>
+    </section>
     <!-- ********************* slider sections********************* -->
     <section class="slider_import_post">
       <div class="slider_content">
@@ -103,6 +123,34 @@
         </div>
       </div>
     </section>
+    <!-- *****************Services******************* -->
+    <div class="section_header" id="services">
+      <h2 class="about_us_title">Services</h2>
+    </div>
+    <!-- end section header -->
+    <div class="container">
+      <div class="about-content">
+        <div class="about-item ltr-effect">
+          <img src="./images/service_n.jpg" />
+        </div>
+        <!-- about-item end -->
+        <div class="about-item ltr-effect">
+          <img src="./images/service1.png" />
+        </div>
+        <!-- about-item end -->
+        <div class="about-item mg ltr-effect">
+          <img src="./images/service2.jpg" />
+        </div>
+        <!-- about-item end -->
+        <div class="about-item ltr-effect">
+          <img src="./images/service3.jpg" />
+        </div>
+        <!-- about-item end -->
+      </div>
+      <!-- about content end -->
+    </div>
+    <!-- Container end -->
+
     <!-- ****************About Us section******************** -->
     <!--About us section-->
     <section class="about_us" id="about">
@@ -130,7 +178,7 @@
     </section>
     <!-- ****************Our services  section******************** -->
     <!--About us section-->
-    <section class="our-service" id="services">
+    <section class="our-service" id="our_services">
       <h1 class="our_service_title">Our services</h1>
       <div class="our_service_content">
         <p>
@@ -148,11 +196,77 @@
           types of projects.
         </p>
         <figcaption class="our-service">
-          <img src="./images/power3-removebg-preview.png" />
+          <img src="./images/service_n.jpg" />
         </figcaption>
       </div>
     </section>
+    <!-- *************************Contact Us****************************** -->
+    <div class="home-page">
+      <div class="img-part"></div>
+      <div class="input-form">
+        <form class="input" action="/costumer-info" method="POST">
+          <h2 class="h2-title">Contact Us</h2>
+          <div>
+            <label for="name" class="label-name">Name</label>
+            <input
+              name="name"
+              class="input-field"
+              id="name-id"
+              type="text"
+              placeholder="Enter your name :"
+            />
+          </div>
+          <div>
+            <label for="email" class="label-name">Email</label>
+            <input
+              name="email"
+              class="input-field"
+              id="email-id"
+              type="text"
+              placeholder="Enter your Email Address :"
+            />
+          </div>
+          <div>
+            <label for="phone" class="label-name">Phone</label>
+            <input
+              name="phone"
+              class="input-field"
+              id="phone-id"
+              type="text"
+              placeholder="Enter your Phone Number :"
+            />
+          </div>
+          <div>
+            <label for="city" class="label-name">City</label>
+            <input
+              name="city"
+              class="input-field"
+              id="city-id"
+              type="text"
+              placeholder="Enter Your City Name :"
+            />
+          </div>
+          <div>
+            <label class="label-name label-name-message">Message</label>
+            <textarea
+              name="message"
+              class="input-field-message"
+              id="message-id"
+              placeholder="Enter your Message @_@"
+            ></textarea>
+          </div>
+          <input class="btn-submit" type="submit" />
+        </form>
+      </div>
+    </div>
 
     <script src="./js/slider.js"></script>
+    <script>
+      const conactUs = document.querySelector('.contact_us')
+      function showContactUs() {
+        conactUs.style.display = 'block'
+        conactUs.style.visibility = 'visible'
+      }
+    </script>
   </body>
 </html>
