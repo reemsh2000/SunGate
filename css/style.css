@@ -171,8 +171,13 @@ body::-webkit-scrollbar-thumb {
 }
 .about_us_title,
 .our_service_title {
+<<<<<<< HEAD
   padding: 5px 8px;
   width: 100px;
+=======
+  padding: 5px;
+  width: 150px;
+>>>>>>> e789e3f2af69e23d8f35160b353cc873ef5d6489
   margin: auto;
   font-size: 22px;
   color: var(--main-color);
@@ -209,7 +214,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* ************ OUr service *********** */
 .our_service_title {
-  width: 170px;
+  width: 180px;
 }
 .our_service_content figcaption{
     margin-right: 25px;
@@ -325,10 +330,14 @@ input[type='radio'] {
     width: 100%;
   }
   .header_nav_list a {
+<<<<<<< HEAD
     font-size: 12px;
   }
   .icons{
     display: none;
+=======
+    font-size: 13px;
+>>>>>>> e789e3f2af69e23d8f35160b353cc873ef5d6489
   }
   .about_us_content figcaption,
   .our_service_content figcaption {
