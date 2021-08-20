@@ -362,7 +362,6 @@ input[type='radio'] {
 
 .footer {
   width: 100%;
-  height: 70vh;
 }
 
 .footer .background {
@@ -436,7 +435,7 @@ input[type='radio'] {
   list-style: none;
   margin-top: 28px;
   width: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .social-menu ul li .fa {
   color: #000000;
@@ -474,14 +473,21 @@ input[type='radio'] {
 .social-menu ul li:nth-child(4) a:hover {
   background-color: #0077b5;
 }
-
+/*  Copy right  */
+.copyright{
+  background-color:#fac936; 
+  width:100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
 /* **************Media query*********** */
-@media (max-width:1400px){
-  .footer{
-    height: auto;
-  }
-  footer .background{
+@media (max-width:1000px){
+  .footer .background {
     display: none;
+    visibility: hidden;
   }
 }
 @media (max-width: 768px) {
