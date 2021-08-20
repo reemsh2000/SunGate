@@ -100,7 +100,10 @@ body::-webkit-scrollbar-thumb {
 .list_item_active a {
   border-bottom: gold 2px solid;
 }
+.header_nav_list a:hover{
+  border-bottom: gold 2px solid;
 
+}
 .icons {
   width: 20%;
   display: flex;
@@ -357,14 +360,14 @@ input[type='radio'] {
 
 /* Footer */
 
-footer {
+.footer {
   width: 100%;
   height: 70vh;
 }
 
-footer .img {
+.footer .background {
   width: 100%;
-  height: 100%;
+  height: 500px;
   background-image: url('../images/footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -415,7 +418,62 @@ footer .img {
 .pop_up_to_top:hover svg {
   transform: translateY(-25px);
 }
-
+/*  social  */
+* Footer starts here */
+.footer-content {
+  text-align: center;
+}
+.social-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.social-menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 28px;
+  width: 500px;
+  margin-bottom: 40px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #84e728;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #0077b5;
+}
 
 /* **************Media query*********** */
 @media (max-width:1400px){
@@ -482,6 +540,13 @@ footer .img {
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 1.5rem;
+  }
+  /* footer Icons  */
+  .social-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
   }
 }
 

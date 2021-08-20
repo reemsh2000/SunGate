@@ -26,10 +26,10 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#our_services">Our Services</a></li>
-            <li><a href="#contact" onclick="showContactUs">contact Us</a></li>
+            <li><a href="#contact" onclick="showContactUs">Contact Us</a></li>
           </ul>
           <div class="icons">
-            <button class="switch"><i class="fas fa-toggle-on"></i></button>
+            <!-- <button class="switch"><i class="fas fa-toggle-on"></i></button> -->
             <i class="fas fa-search"></i>
           </div>
         </nav>
@@ -190,7 +190,7 @@
       </div>
     </section>
     <!-- *************************Contact Us****************************** -->
-    <div class="home-page" id='contact'>
+    <div class="home-page" id="contact">
       <div class="img-part"></div>
       <div class="input-form">
         <form class="input" action="/costumer-info" method="POST">
@@ -248,62 +248,87 @@
         </form>
       </div>
     </div>
-    <footer>
-      <div class='img'></div>
-
-    </footer>
-       <!-- pop button scroll to top -->
-       <div class="pop_up_to_top">
-        <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-            xmlns="http://www.w3.org/2000/svg">
-            <g>
-                <g>
-                    <g>
-                        <g>
-                            <path
-                                d="m342.092 278.119h-168.146v-121.339h-70.148l155.097-156.78 149.308 156.78h-66.111z" />
-                        </g>
-                    </g>
-                </g>
-                <g>
-                    <g>
-                        <g>
-                            <path d="m173.946 447.144h29.28v30.217h-29.28z" />
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="m173.946 321.666h29.28v95.136h-29.28z" />
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="m311.875 447.144h30.217v30.217h-30.217z" />
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="m311.875 321.666h30.217v95.136h-30.217z" />
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <g>
-                                <path d="m242.442 371.761h30.217v140.239h-30.217z" />
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </svg>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="background"></div>
+      <footer class="social-menu">
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </footer>
     </div>
+    <!-- ********************************************** -->
+    <!-- pop button scroll to top -->
+    <div class="pop_up_to_top">
+      <svg
+        id="Capa_1"
+        enable-background="new 0 0 512 512"
+        height="512"
+        viewBox="0 0 512 512"
+        width="512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <g>
+            <g>
+              <g>
+                <path
+                  d="m342.092 278.119h-168.146v-121.339h-70.148l155.097-156.78 149.308 156.78h-66.111z"
+                />
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <g>
+                <path d="m173.946 447.144h29.28v30.217h-29.28z" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="m173.946 321.666h29.28v95.136h-29.28z" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="m311.875 447.144h30.217v30.217h-30.217z" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="m311.875 321.666h30.217v95.136h-30.217z" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <g>
+                  <path d="m242.442 371.761h30.217v140.239h-30.217z" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+<!-- ******************************************* -->
 
     <script src="./js/slider.js"></script>
     <script>
-      const conactUs = document.querySelector('.contact_us')
+      const conactUs = document.querySelector(".contact_us");
       function showContactUs() {
-        conactUs.style.display = 'block'
-        conactUs.style.visibility = 'visible'
+        conactUs.style.display = "block";
+        conactUs.style.visibility = "visible";
       }
     </script>
   </body>
