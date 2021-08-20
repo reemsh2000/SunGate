@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb {
 .about_us_title,
 .our_service_title {
   padding: 5px 8px;
-  width: 100px;
+  width: 120px;
   margin: auto;
   font-size: 22px;
   color: var(--main-color);
